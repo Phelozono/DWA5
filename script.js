@@ -1,5 +1,4 @@
 // scripts.js
-
 const form = document.querySelector("[data-form]");
 const result = document.querySelector("[data-result]");
 
