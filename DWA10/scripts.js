@@ -1,4 +1,4 @@
-const number = document.querySelector('[data-key="number"]');
+ const number = document.querySelector('[data-key="number"]');
 const subtract = document.querySelector('[data-key="subtract"]');
 const add = document.querySelector('[data-key="add"]');
 const reset = document.querySelector('[data-key="reset"]');
@@ -8,8 +8,8 @@ number.value = 10;
 subtract.addEventListener('click', () => subtractHandler(number, subtract, add));
 add.addEventListener('click', () => addHandler(number, subtract, add));
 reset.addEventListener('click', () => resetHandler(number, subtract, add));
- // Handler function for subtract button
-export const subtractHandler = (number, subtract, add) => {
+// Handler function for subtract button
+ const subtractHandler = (number, subtract, add) => {
   // Calculate the new value by subtracting the step amount
   const newValue = parseInt(number.value) - STEP_AMOUNT;
   
@@ -28,7 +28,7 @@ export const subtractHandler = (number, subtract, add) => {
 };
 
 // Handler function for add button
-export const addHandler = (number, subtract, add) => {
+ const addHandler = (number, subtract, add) => {
   // Calculate the new value by adding the step amount
   const newValue = parseInt(number.value) + STEP_AMOUNT;
 
@@ -47,7 +47,7 @@ export const addHandler = (number, subtract, add) => {
 };
 
 // Handler function for reset button
-export const resetHandler = (number, subtract, add) => {
+ const resetHandler = (number, subtract, add) => {
   // Reset the input value to 0
   number.value = 0;
 
