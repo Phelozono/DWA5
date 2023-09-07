@@ -18,5 +18,3 @@ const provinceOfIndividual = names.reduce((acc, name, index) => {
     return acc;
   }, {});
   console.log(provinceOfIndividual);
-  
-  
